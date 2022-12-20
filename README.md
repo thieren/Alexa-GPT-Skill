@@ -4,7 +4,9 @@ This is an Alexa skill that enables you to chat with OpenAI's text generator. It
 
 It is mostly a proof of concept work.
 
-### Requirements
+Since this was written on one afternoon please don't expect this to be flawless.
+
+## Requirements
 
 What you'll need:
 
@@ -20,7 +22,7 @@ What you'll need:
 
 - SSL-Certificates for your server (you can use public certificates e.g. Let's Encrypt or self signed)
 
-### How to use
+## How to use
 
 Here are a few steps to make this work. Some understanding of programming is required since I won't go into much detail:
 
@@ -33,7 +35,7 @@ Here are a few steps to make this work. Some understanding of programming is req
 7. Edit the needed settings for the skill, like Endpoints to point to your server and invocations
 8. Build the model and test it in your dev account or on your echo devices
 
-### config.json
+## config.json
 
 ```
 {
@@ -44,7 +46,7 @@ Here are a few steps to make this work. Some understanding of programming is req
 }
 ```
 
-### Caveats
+## Caveats
 
 - Only available in german for now (will add english soon)
 - Generated text input is heavily dependend on the microphones of your echo device, which are not that good sometimes. However I had pretty decent results so far.
