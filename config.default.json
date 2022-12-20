@@ -1,0 +1,6 @@
+{
+  "apiKey": "YOUR_OWN_OPENAI_API_KEY",
+  "port": 443,
+  "cert_key_file": "my.server.com.key",
+  "cert_pem_file": "my.server.com.pem"
+}

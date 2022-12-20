@@ -1,0 +1,75 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "künstliche intelligenz",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "QuestionIntent",
+                  "slots": [
+                      {
+                          "name": "requestPhrase",
+                          "type": "AMAZON.SearchQuery"
+                      }
+                  ],
+                  "samples": [
+                      "Bitte sage mir {requestPhrase}"
+                  ]
+              }
+          ],
+          "types": []
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "QuestionIntent",
+                  "delegationStrategy": "SKILL_RESPONSE",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "requestPhrase",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.8127533269.695681230201"
+                          }
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+          {
+              "id": "Elicit.Slot.8127533269.695681230201",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Was ist deine Frage?"
+                  }
+              ]
+          }
+      ]
+  }
+}
