@@ -66,7 +66,7 @@ export class GPTResponse {
     this.context = '';
     this.startTime = new Date();
 
-    this.logFile = fs.createWriteStream(__dirname + '/../logs/' + this.generateLogFileName());
+    this.logFile = fs.createWriteStream(__dirname + '/../chatlogs/' + this.generateLogFileName());
   }
 
   public stop() {
